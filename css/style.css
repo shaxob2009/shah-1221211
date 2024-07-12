@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+bady {
+  background-repeat: no-repeat;
+  background-color: rgb(225, 134, 134);
+}
+
+.parent-bg {
+  margin: 0 auto;
+  width: 700px;
+  height: 700px;
+  background-color: rgb(222, 0, 0);
+  animation-name: animationName;
+  background-image: url(../img/nutrtr.jpg);
+  background-size: cover;
+  position: relative;
+  color: rgb(239, 137, 12);
+  box-shadow: 1px 1px 50px 30px;
+  transition: 1s;
+  top: 200px;
+}
+.parent-bg:hover {
+  box-shadow: 1px 1px 50px 30px;
+  background-image: url(../img/loading.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  color: rgb(8, 255, 8);
+}
+.parent {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 50%;
+  animation-name: animationName;
+  background-image: url(../img/bmw1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+.parent:hover {
+  cursor: pointer;
+}
+
+@keyframes animationName {
+  0% {
+    background-image: url(../img/bmw1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+  }
+  25% {
+    background-image: url(../img/benz.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 500px;
+    left: 500px;
+  }
+  50% {
+    background-image: url(../img/lombo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 500px;
+    left: 0;
+  }
+  75% {
+    background-image: url(../img/ferari.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-play-state: 1s;
+    top: 0;
+    left: 500px;
+  }
+  100% {
+    background-image: url(../img/ww.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+  }
+}
